@@ -1,4 +1,4 @@
-# "{{cookiecutter.project_name}}"
+# {{cookiecutter.project_name}}
 
 Some library to release on Maven Central.
 

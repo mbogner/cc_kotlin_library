@@ -13,6 +13,9 @@ pluginManagement {
         val dokkaVersion: String by System.getProperties()
 
         kotlin("jvm") version kotlinVersion
+        kotlin("plugin.spring") version kotlinVersion
+        kotlin("plugin.jpa") version kotlinVersion
+        kotlin("plugin.noarg") version kotlinVersion
         id("org.sonarqube") version sonarqubeVersion
         id("org.jetbrains.dokka") version dokkaVersion
     }
