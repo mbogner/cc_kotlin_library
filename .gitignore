@@ -2,5 +2,5 @@
 .vscode/
 .kotlin/
 .idea/
-/test/
+/kotlin-logging/
 *.zip
