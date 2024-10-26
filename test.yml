@@ -1,0 +1,3 @@
+default_context:
+  project_name: "kotlin-logging"
+  project_key: "logging"
