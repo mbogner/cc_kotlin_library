@@ -53,6 +53,11 @@ tasks {
     withType<GenerateModuleMetadata>().configureEach {
         enabled = false
     }
+
+    register<Jar>("sourcesJar") {
+        archiveClassifier.set("sources")
+        from(sourceSets.main.get().allSource)
+    }
 }
 
 sonarqube {
@@ -86,6 +91,7 @@ publishing {
     publications {
         create<MavenPublication>("maven") {
             from(components["java"])
+            artifact(tasks["sourcesJar"])
 
             pom {
                 name.set("{{cookiecutter.project_name}}")
