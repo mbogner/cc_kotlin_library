@@ -16,6 +16,7 @@ dependencies {
 
     // TEST ---------
     testImplementation("org.assertj:assertj-core")
+    testImplementation("org.junit.jupiter:junit-jupiter-params")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
@@ -108,7 +109,7 @@ publishing {
 
             pom {
                 name.set("{{cookiecutter.project_name}}")
-                description.set("A library for publishing in Maven Central") // TODO
+                description.set("{{cookiecutter.description}}")
                 url.set("https://mbo.dev")
                 licenses {
                     license {

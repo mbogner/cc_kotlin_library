@@ -1,5 +1,6 @@
 {
     "project_name": "",
+    "description": "",
     "project_key": "{{cookiecutter.project_name|lower|replace('-', '')|replace('_', '')}}",
     "package": "dev.mbo.{{cookiecutter.project_key}}",
     "package_dir": "{{cookiecutter.package|replace('.', '/')}}",

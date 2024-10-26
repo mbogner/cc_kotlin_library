@@ -1,6 +1,6 @@
 # {{cookiecutter.project_name}}
 
-Some library to release on Maven Central.
+{{cookiecutter.description}}
 
 ## Release
 
