@@ -20,6 +20,8 @@ Upload:
 ./gradlew clean signMavenPublication publishToMavenLocal publish
 ```
 
+see https://s01.oss.sonatype.org/content/groups/public/dev/mbo/
+
 ### Web Process
 
 https://s01.oss.sonatype.org
