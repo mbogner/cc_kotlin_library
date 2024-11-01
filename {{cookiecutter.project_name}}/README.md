@@ -2,11 +2,7 @@
 
 {{cookiecutter.description}}
 
-## Release
-
-see https://github.com/mbogner/spring-boot-bom for more details.
-
-### Build
+## Build
 
 Local:
 ```shell
@@ -15,10 +11,13 @@ Local:
 
 see `~/.m2/repository/dev/mbo/{{cookiecutter.project_name}}` for the created content
 
-Upload:
+## Release
+
 ```shell
-./gradlew clean signMavenPublication publishToMavenLocal publish
+./gradlew publishToSonatype closeAndReleaseSonatypeStagingRepository
 ```
+
+By running this you don't need to use the web interface to close and release the library.
 
 see https://s01.oss.sonatype.org/content/groups/public/dev/mbo/
 
