@@ -1,5 +1,5 @@
-# Cookiecutter Spring Boot Kotlin API
+# Cookiecutter Kotlin Library
 
-Simple template for use with Spring Boot, Kotlin and OpenAPI with code generation.
+Create libraries for use in other projects.
 
 This project is using https://github.com/mbogner/spring-boot-bom to define library versions.
