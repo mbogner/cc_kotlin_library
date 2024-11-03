@@ -4,7 +4,7 @@
 
 ## Build
 
-Local:
+Local publication:
 ```shell
 ./gradlew clean signMavenPublication publishToMavenLocal
 ```
@@ -12,6 +12,15 @@ Local:
 see `~/.m2/repository/dev/mbo/{{cookiecutter.project_name}}` for the created content
 
 ## Release
+
+For example this prepares a release of 1.0.0 and a development version of 1.0.1-SNAPSHOT.
+Do NOT run it with the sample versions. This needs to be updated on every run.
+
+```shell
+./gradlew release -Prelease.useAutomaticVersion=true -Prelease.releaseVersion=1.0.0 -Prelease.newVersion=1.0.1-SNAPSHOT
+```
+
+## Publication
 
 ```shell
 ./gradlew publishToSonatype closeAndReleaseSonatypeStagingRepository

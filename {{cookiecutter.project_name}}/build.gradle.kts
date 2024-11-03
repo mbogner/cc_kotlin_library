@@ -6,6 +6,7 @@ plugins {
     signing
     id("maven-publish")
     id("io.github.gradle-nexus.publish-plugin")
+    id("net.researchgate.release")
 }
 
 val javaVersion: String by System.getProperties()
