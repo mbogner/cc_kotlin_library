@@ -15,6 +15,7 @@ group = mavenGroup
 
 dependencies {
     implementation(platform(libs.bom))
+    implementation(platform(libs.library.bom))
 
     // TEST ---------
     testImplementation("org.assertj:assertj-core")

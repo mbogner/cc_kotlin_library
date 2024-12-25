@@ -32,8 +32,10 @@ dependencyResolutionManagement {
     versionCatalogs {
         create("libs") {
             val bomVersion: String by System.getProperties()
-            version("bom", bomVersion)
-            library("bom", "dev.mbo", "spring-boot-bom").versionRef("bom")
+            library("bom", "dev.mbo", "spring-boot-bom").version(bomVersion)
+
+            val libraryBomVersion: String by System.getProperties()
+            library("library-bom", "dev.mbo", "library-bom").version(libraryBomVersion)
         }
     }
 }
